@@ -1,0 +1,45 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pet Shop</title>
+    <link rel="stylesheet" href="css/petshop.css">
+    <link rel="stylesheet" href="css/galeria.css">
+</head>
+<body>
+<header>
+    <div class="container"> <!-- class container carrega elementos de um lado para outro -->
+        <img src="img/logo-pet-2.png" alt="Logo Pet">
+        <h1>pet shop</h1>
+        <nav class="menu">
+            <a href="index.html">HOME</a>
+            <a class="active"  href="galeria.html">GALERIA</a>
+            <a href="contato.html">CONTATO</a>
+        </nav>
+    </div>
+</header>
+
+<!-- INÍCIO CONTEÚDO DO SITE -->
+<section>
+        <img id="dogao" src="img/dogs/basenji.jpg" alt="Basenji">
+        <h2>Basenji</h2>
+    
+        <div class="miniaturas">
+            <img src="img/dogs/basenji.jpg" alt="Basenji" onclick="trocaDog(this.src, this.alt)">
+            <img src="img/dogs/bolognese.jpg" alt="Bichon Bolognese" onclick="trocaDog(this.src, this.alt)">
+            <img src="img/dogs/bull.jpg" alt="Bull Terrier" onclick="trocaDog(this.src, this.alt)">
+            <img src="img/dogs/eskimo.jpg" alt="American Eskimo" onclick="trocaDog(this.src, this.alt)">
+        <!-- o THIS serve para passar o atributo do próprio elemento que CHAMA a função -->
+            <img src="img/dogs/hound.jpg" alt="Afhgan Hound" onclick="trocaDog(this.src, this.alt)">
+        </div>
+    </section>
+<!-- FIM CONTEÚDO DO SITE -->
+
+<footer>
+    <!-- o footer não precisa ter heading -->
+    Rua São Francisco da Califórnia, 23 - Porto Alegre/RS
+</footer>
+<script src="js/galeria.js"></script>
+</body>
+</html>

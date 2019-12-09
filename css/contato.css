@@ -1,0 +1,64 @@
+.menu a.active {
+    background: #0066cc
+}
+section {
+    background: white;
+    width: 620px; /* LARGURA do elemento */
+    margin: 80px auto; /* borda superior 80px e auto nas outras*/
+    min-height: 150px;
+    padding: 12px; /* gordurinha */
+}
+section iframe,
+section form {
+    width: 300px;
+    height: 300px;
+    border: none;
+    display: inline-block; /* iframe por padrão é INLINE. O form por padrão é BLOCK. Então, transforma-se os dois em INLINE-BLOCK, sendo o mesmo tipo de padrão */
+    margin: 5px;
+}
+/* neste caso, seria se não tivesse colocado o margin: 5px na section
+ section form {
+    margin-bottom: 0;
+} */
+
+section iframe {
+    float: left; /* float faz flutuar e então ele sobe para ficar alinhado, com o posisionamento correto. */
+}
+
+/* CONFIGURAÇÃO DO FURMULÁRIO */
+input, textarea {
+    width: 300px;
+    border: 2px solid #0066cc;
+    border-radius: 5px;
+    margin: 3px;
+    padding: 6px;
+    font-family: Arial;
+}
+textarea {
+    height: 130px;
+    resize: none; /* retira o resize */
+}
+/* configurações que se aplicam somente a todos os botões do tipo submit: */
+button[type=submit] { /* por padrão sem aspas  */
+    background: #f3f3f3; /* fundo do botão */
+    padding: 8px; /* gordurinha dentro do botão */
+    border: 2px solid #0066cc;
+    border-radius: 6px; /* bordas arredondadas no botão */
+    font-weight: bold; 
+    /* centraliza o botão */
+    display: block;
+    margin: 0 auto;
+}
+
+/* se quiser mexer no alinhamento no placeholder
+input::placeholder {
+    text-align: center;
+}  */
+
+/* configurações mensagem de erro */
+#erro {
+    color: red;
+    font-size: 20px;
+    font-weight: bolder;
+    text-align: center;
+}

@@ -1,0 +1,16 @@
+.menu a.active {
+    background: #fad100;
+}
+section {
+    background: white;
+    border: 1px solid black;
+    width: 700px; /* LARGURA */
+    /* margin: 0 auto; CENTRALIZA O ELEMENTO NA TELA */
+    margin: 80px auto;
+    padding: 20px;
+    line-height: 20px; /* DISTÂNCIA DA LINHA */
+    border-radius: 10px; /* BORDAS ARREDONDADAS! */
+    box-shadow: 10px 10px 20px 6px #999999; /* inset : coloca a sombra para dentro */
+    /* box-shadow: X, Y, BLUR, SPREAD, COLOR */
+    /*text-shadow: 5px 5px 4px #999999; /* sombra no texto */ 
+}

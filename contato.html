@@ -1,0 +1,49 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pet Shop</title>
+    <link rel="stylesheet" href="css/petshop.css">
+    <link rel="stylesheet" href="css/contato.css">
+</head>
+<body>
+<header>
+    <div class="container"> <!-- class container carrega elementos de um lado para outro -->
+        <img src="img/logo-pet-2.png" alt="Logo Pet">
+        <h1>pet shop</h1>
+        <nav class="menu">
+            <a href="index.html">HOME</a>
+            <a href="galeria.html">GALERIA</a>
+            <a class="active" href="contato.html">CONTATO</a>
+        </nav>
+    </div>
+</header>
+
+<!-- INÍCIO CONTEÚDO DO SITE -->
+<section>
+    <!-- dentro do iframe, colocar o endereço do mapa (maps, compartilhar, incorporar um mapa, copiar html e substituir toda a linha) -->
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3454.6777087577466!2d-51.19394568520223!3d-30.017409336979476!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x951979c56d0e03b1%3A0xcc4ea47f1ca6dd2e!2sTargetTrust!5e0!3m2!1spt-BR!2sbr!4v1569363335251!5m2!1spt-BR!2sbr"></iframe>
+
+    <form onsubmit="return validaForm()">
+        <input id="nome" type="text" name="nome" placeholder="Digite seu nome"><!-- placeholder é uma informação do que é/para que serve o campo -->
+        <input id="email" type="text" name="email" placeholder="Digite seu e-mail">
+        <textarea id="mensagem" name="mensagem" placeholder="Digite sua mensagem"></textarea>
+        <button type="submit">ENVIAR =)</button>
+
+        <!-- mensagem de erro, por JS -->
+        <p id="erro"></p> 
+    </form>
+
+
+
+</section>
+
+<!-- FIM CONTEÚDO DO SITE -->
+<footer>
+    <!-- o footer não precisa ter heading -->
+    Rua São Francisco da Califórnia, 23 - Porto Alegre/RS
+</footer>
+<script src="js/contato.js"></script>
+</body>
+</html>
